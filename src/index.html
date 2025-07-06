@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TS + Tailwind App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body class="p-8 bg-gray-100">
-    <h1 class="text-4xl font-bold text-blue-600">
-      Hello, Tailwind & TypeScript!
-    </h1>
-    <div id="app" class="mt-4"></div>
+    <div
+      class="bg-violet-200 h-10 w-full border-2 border-violet-600 rounded-md my-4 p-2 flex justify-center items-center"
+    >
+      <h1 class="text-center font-mono font-extra-bold">
+        Hello, Tailwind & TypeScript!
+      </h1>
+    </div>
+    <div class="flex space-x-6 justify-evenly mt-2">
+      <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+      <div class="h-16 w-16 rounded-full bg-orange-500"></div>
+      <div class="h-16 w-16 rounded-full bg-green-500"></div>
+    </div>
+    <div class="flex flex-col space-y-6 justify-center items-center mt-6">
+      <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+      <div class="h-16 w-16 rounded-full bg-orange-500"></div>
+      <div class="h-16 w-16 rounded-full bg-green-500"></div>
+    </div>
+    <div id="app" class="mt-4">
+    </div>
+  </div>
 
     <script type="module" src="main.js"></script>
   </body>

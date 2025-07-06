@@ -2,6 +2,6 @@ const app = document.getElementById("app");
 if (app) {
   const msg = document.createElement("p");
   msg.textContent = "Hello from TypeScript!";
-  msg.className = "text-lg text-green-700";
+  msg.className = "text-center text-lg text-cyan-400 mt-2";
   app.appendChild(msg);
 }
