@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // modern JS
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true, // full strict mode
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true, // generate sourcemaps
+    "rootDir": "./src", // input folder
+    "outDir": "./dist", // compiled output
+    "allowJs": false,
+    "jsx": "preserve", // if you add .jsx/.tsx later
+    "noEmitOnError": true // avoid emitting on errors
+  },
+  "include": ["src/**/*"], // watch all TS/JS in src :contentReference[oaicite:1]{index=1}
+  "exclude": ["node_modules", "dist"]
+}
