@@ -8,6 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
@@ -17,6 +20,7 @@
     --color-violet-200: oklch(89.4% 0.057 293.283);
     --color-violet-600: oklch(54.1% 0.281 293.009);
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
@@ -174,6 +178,15 @@
   }
 }
 @layer utilities {
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .m-44 {
+    margin: calc(var(--spacing) * 44);
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -197,6 +210,9 @@
   }
   .grid {
     display: grid;
+  }
+  .hidden {
+    display: none;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -258,6 +274,12 @@
   .border-violet-600 {
     border-color: var(--color-violet-600);
   }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
@@ -291,6 +313,49 @@
   }
   .text-cyan-400 {
     color: var(--color-cyan-400);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:bg-amber-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-amber-500);
+    }
+  }
+  .md\:bg-amber-700 {
+    @media (width >= 48rem) {
+      background-color: var(--color-amber-700);
+    }
+  }
+  .lg\:bg-amber-300 {
+    @media (width >= 64rem) {
+      background-color: var(--color-amber-300);
+    }
+  }
+  .lg\:bg-amber-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-amber-500);
+    }
+  }
+  .lg\:bg-amber-700 {
+    @media (width >= 64rem) {
+      background-color: var(--color-amber-700);
+    }
+  }
+  .xl\:bg-amber-500 {
+    @media (width >= 80rem) {
+      background-color: var(--color-amber-500);
+    }
   }
 }
 body {

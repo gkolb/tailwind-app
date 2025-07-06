@@ -32,6 +32,14 @@
       <div class="h-16 rounded-full bg-orange-500"></div>
       <div class="h-16 rounded-full bg-green-500"></div>
     </div>
+    <!-- Media Queries & Responsive Design (Tailwind has good docs explaining this) Use unprefixed classes to target mobile and media query breakpoints for large screens (ex. md, lg, xl)-->
+     <!-- Min-width queries are default. When <query-size>: something, something only applies when screen width is larger than query-size -->
+    <div class="md:block hidden">
+      <div class="text-white mt-4 text-center">I appear on screen wider than 768px</div>
+    </div>
+    <div class="bg-amber-300 md:bg-amber-500 lg:bg-amber-700">
+      <div class="text-white mt-4 text-center">I change color on different screen sizes</div>
+    </div>
     <div id="app" class="mt-4">
     </div>
   </div>
