@@ -1,7 +1,5 @@
 @import "tailwindcss";
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 body {
   background-color: #10172a;
@@ -11,3 +9,20 @@ body {
   --color-chestnut: #973f29;
 }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgXCJ0YWlsd2luZGNzc1wiO1xuLyogQHRhaWx3aW5kIGJhc2U7XG5AdGFpbHdpbmQgY29tcG9uZW50cztcbkB0YWlsd2luZCB1dGlsaXRpZXM7ICovXG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTAxNzJhO1xufSJdfQ== */
+
+@layer base {
+  h3 {
+    @apply text-base font-medium tracking-tight text-slate-900 dark:text-white;
+  }
+  p {
+    @apply mt-2 text-sm text-slate-500 dark:text-blue-100;
+  }
+  button {
+    @apply px-4 py-2 text-sm font-medium mt-8 text-blue-900 bg-blue-100 rounded-md;
+  }
+}
+@layer components {
+  .card {
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+  }
+}
